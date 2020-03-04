@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h2>Cars Array</h2>
+    <ul>
+        <script>
+            for(let i = 0;i < cars.length; i++) {
+                document.writeln(`<li>${cars[i]}</li>`);
+            }
+
+            
+        </script>
+    </ul>
+
+    <h2>Makes arrau</h2>
+    <ul>
+        <script>
+            makes.forEach(make => {
+                document.writeln(`<li>${make}</li>`);
+            });
+                
+        </script>
+    </ul>
+
+    <script>
+        if(myNumbers.length > 0){
+            //write them out
+            document.writeln('<ul>')
+                myNumbers.forEach(n => {
+                    document.writeln(`<li>${n}</li>`);
+                });
+                document.writeln('</ul>');
+
+                //remove the first element of the array
+                myNumbers.shift();
+                document.writeln('<ul>')
+                myNumbers.forEach(n => {
+                    document.writeln(`<li>${n}</li>`);
+                });
+                document.writeln('</ul>');
+
+                myNumbers.unshift(0);
+
+                document.writeln('<ul>')
+                myNumbers.forEach(n => {
+                    document.writeln(`<li>${n}</li>`);
+                });
+                document.writeln('</ul>');
+        } else {
+            document.writeln('<p>No numbers in the array.</p>');
+        }
+
+    </script>
+    
+</body>
+</html>
